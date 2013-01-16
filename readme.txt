@@ -14,7 +14,11 @@ CSS3 animated button generator for WordPress that's accessible from one easy-to-
 
 Quickly create amazing CSS3 animated buttons from the WordPress visual editor.
 
-You could spend countless hours in Photoshop trying to create an awesome button, or create an awesome button with **All In One Buttons** in seconds!
+You could spend countless hours in Photoshop trying to create the perfect button, or create the perfect button with **All In One Buttons** in seconds!
+
+All In One Buttons will allow you to customize the alignment, size, color, icon, animation and more.
+
+Best of all, it'll save your buttons as WordPress shortcodes for rapid deployment on your website(s).
 
 = Online Documentation =
 
@@ -30,7 +34,7 @@ Support for all of our items is handled through the WP Goods Ticksy support syst
 
 * Animated Buttons - All In One Buttons uses CSS3 animations to turn an otherwise ordinary button into something extraordinary!
 * WordPress Shortcode - Now you can create buttons like a pro, even if you have zero knowledge of HTML, JavaScript or CSS.
-* Live Preview - You can check out an interactive live preview as you’re creating buttons in All In One Buttons.
+* Live Preview - You can check out an interactive live preview as you're creating buttons in All In One Buttons.
 * TinyMCE button - You never have to memorize a WordPress shortcode again! You can access All In One Buttons from one easy-to-use button in the visual editor. 
 * Localization Ready - All In One Buttons is ready for localization. We have prepared .po and .mo files, so you can easily translate All In One Buttons to any language.
 * And so much more...
