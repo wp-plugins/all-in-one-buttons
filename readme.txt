@@ -16,9 +16,7 @@ Quickly create amazing CSS3 animated buttons from the WordPress visual editor.
 
 You could spend countless hours in Photoshop trying to create the perfect button, or create the perfect button with **All In One Buttons** in seconds!
 
-All In One Buttons will allow you to customize the alignment, size, color, icon, animation and more.
-
-Best of all, it'll save your buttons as WordPress shortcodes for rapid deployment on your website(s).
+All In One Buttons will allow you to customize the alignment, size, color, icon, animation and more. It'll also save your buttons as WordPress shortcodes for rapid deployment on your website(s).
 
 = Online Documentation =
 
