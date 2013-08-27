@@ -1,10 +1,10 @@
 === All In One Buttons: CSS3 Animated Button Generator for WordPress ===
 Contributors: wpgoods
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2T46NVPEWL698
+Donate link: http://www.wpgoods.com
 Tags: button generator,button,buttons,CSS button generator,CSS Buttons,CSS3 button generator,CSS3 buttons,animated buttons
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: trunk
+Tested up to: 3.6
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,11 +62,10 @@ Do you have questions or issues with All In One Buttons? Use these support chann
 
 == Changelog ==
 
-= 1.0 =
+= Version 1.1 =
+* Fixed: Error that caused buttons to take up 100% width.
+* Added: Option to create nofollow links.
+* Updated: Code to improve performance.
 
+= Version 1.0 =
 * Initial release.
-
-== Upgrade Notice ==
-
-= 1.0 =
-Initial release.

@@ -2,6 +2,18 @@
 if (!class_exists('aiobtnDialog')) {
 
 	class aiobtnDialog {
+  
+    /**
+     * Constructor
+     */
+    function __construct() {
+      //for all users
+      add_action('wp_ajax_nopriv_ajax_aiobtn_dialog', array( $this, 'ajax_aiobtn_dialog' ));
+      add_action('wp_ajax_nopriv_ajax_aiobtn_nonce', array( $this, 'ajax_aiobtn_nonce' ));
+      // for logged in users
+      add_action('wp_ajax_ajax_aiobtn_dialog', array( $this, 'ajax_aiobtn_dialog' ));
+      add_action('wp_ajax_ajax_aiobtn_nonce', array( $this, 'ajax_aiobtn_nonce' ));
+    }
 	
 		public function ajax_aiobtn_dialog() {
 			global $AIO_Buttons_Data;
@@ -21,7 +33,7 @@ if (!class_exists('aiobtnDialog')) {
 					<link href="<?php echo $AIO_Buttons_Path . '/css/dialog.css' ?>" rel="stylesheet" type="text/css" />
 					<link href="<?php echo $AIO_Buttons_Path . '/css/display.css' ?>" rel="stylesheet" type="text/css" />
 					<!-- JavaScript -->
-					<script type="text/javascript" src="<?php echo $AIO_Buttons_Path . '/js/libs/jquery-1.8.3.min.js' ?>"></script>
+					<script type="text/javascript" src="<?php echo $AIO_Buttons_Path . '/js/libs/jquery-1.10.2.min.js' ?>"></script>
 					<script type="text/javascript" src="<?php echo $AIO_Buttons_Path . '/js/libs/tiny_mce_popup.js' ?>"></script>					
 					<script type="text/javascript" src="<?php echo $AIO_Buttons_Path . '/js/dialog.min.js' ?>"></script>
 				</head>
@@ -60,6 +72,7 @@ if (!class_exists('aiobtnDialog')) {
 							}
 							$html .= $this->text_option('aiobtn_text',__('TEXT:','aiobtn'),$default_text);
 							$html .= $this->select_option('aiobtn_target',__('TARGET:','aiobtn'),array('_self' => __('_self','aiobtn'),'_blank' => __('_blank','aiobtn')),'_self');
+              $html .= $this->select_option('aiobtn_relationship',__('RELATIONSHIP:','aiobtn'),array('dofollow' => __('dofollow','aiobtn'),'nofollow' => __('nofollow','aiobtn'),'prefetch' => __('prefetch','aiobtn'),'noreferrer' => __('noreferrer','aiobtn'),'author' => __('author','aiobtn'),'bookmark' => __('bookmark','aiobtn'),'help' => __('help','aiobtn'),'search' => __('search','aiobtn'),'tag' => __('tag','aiobtn'),'next' => __('next','aiobtn'),'prev' => __('prev','aiobtn'),'license' => __('license','aiobtn'),'alternate' => __('alternate','aiobtn')),'dofollow');
 							$html .= $this->text_option('aiobtn_url',__('DESTINATION URL:','aiobtn'),'');
 							if (is_array($AIO_Buttons_Data) && array_key_exists('shortcode_name',$AIO_Buttons_Data)) {
 								$shortcode_name = $AIO_Buttons_Data['shortcode_name'];
@@ -150,6 +163,8 @@ if (!class_exists('aiobtnDialog')) {
 		}
 		
 	} // end class
-	
+  
+	$aiobtn_dialog = new aiobtnDialog();
+  
 }
 ?>

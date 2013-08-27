@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: All in One Buttons
-Plugin URI: http://www.wpgoods.com/products/all-in-one-buttons/
+Plugin URI: http://www.wpgoods.com/product/all-in-one-buttons/
 Description: Quickly create amazing CSS3 buttons from the WordPress visual editor.
-Version: 1.0
+Version: 1.1
 Author: Brandon Bell
 Author URI: http://www.wpgoods.com
 Author Email: contact@wpgoods.com
@@ -17,11 +17,8 @@ define( 'aiobtn_path', plugin_dir_path(__FILE__) );
 $AIO_Buttons_Path = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
 $AIO_Buttons_Data = get_option('aiobtn_options');
 $AIO_Buttons_Slug = basename(dirname(__FILE__));
-$AIO_Buttons_Class = array('dialog','shortcode');
-//require the admin files
-require_once( aiobtn_path . 'admin/class.php' );
-require_once( aiobtn_path . 'admin/options.php' );
-//require the dialog and shortcode classes
+$AIO_Buttons_Class = array('admin','dialog','plugin','shortcode');
+//require the classes
 foreach($AIO_Buttons_Class as $class) {
 	require_once( aiobtn_path . 'inc/'.$class.'/class.php' );
 }
@@ -39,10 +36,10 @@ class AIOButtons {
 	 */
 	function __construct() {
 		//register an activation hook for the plugin
-		register_activation_hook( __FILE__, array( &$this, 'install' ) );
+		register_activation_hook( __FILE__, array( $this, 'install' ) );
 
 		//Hook up to the init action
-		add_action( 'init', array( &$this, 'init' ) );
+		add_action( 'init', array( $this, 'init' ) );
 	}
   
 	/**
@@ -56,7 +53,7 @@ class AIOButtons {
 				'default_animation' => 'none',
 				'default_color' => 'red',
 				'default_size' => 'small',
-				'default_text' => 'Download Now'
+				'default_text' => __('Download Now','aiobtn')
 			);
 			update_option('aiobtn_options',$default);
 		}
@@ -66,89 +63,21 @@ class AIOButtons {
 	 * Runs when the plugin is initialized
 	 */
 	public function init() {
-		global $AIO_Buttons_Data;
-	
 		// Setup localization
 		load_plugin_textdomain( 'aiobtn', false, dirname( plugin_basename( __FILE__ ) ) . '/lang' );
+    
 		// Load JavaScript and Stylesheets
 		$this->register_scripts_and_styles();
-		// Add TinyMCE button
-		$this->add_button();
-		
-		// Add action links in Plugins page
-		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( &$this, 'action_links' ) );
-		// Add meta links in Plugins page
-		add_filter( 'plugin_row_meta', array( &$this, 'meta_links' ), 10, 2 );
-		
-		// Create new Dialog instance
-		$dialog = new aiobtnDialog();
-		//for all users
-		add_action('wp_ajax_nopriv_ajax_aiobtn_dialog', array( &$dialog, 'ajax_aiobtn_dialog' ));
-		add_action('wp_ajax_nopriv_ajax_aiobtn_nonce', array( &$dialog, 'ajax_aiobtn_nonce' ));
-		// for logged in users
-		add_action('wp_ajax_ajax_aiobtn_dialog', array( &$dialog, 'ajax_aiobtn_dialog' ));
-		add_action('wp_ajax_ajax_aiobtn_nonce', array( &$dialog, 'ajax_aiobtn_nonce' ));
-		
-		// Register the WordPress shortcode
-		$shortcode = new aiobtnShortcode();
-		if (is_array($AIO_Buttons_Data) && array_key_exists('shortcode_name',$AIO_Buttons_Data)) {
-			add_shortcode($AIO_Buttons_Data['shortcode_name'], array( &$shortcode, 'shortcode'));
-		} else {
-			add_shortcode('aio_button', array( &$shortcode, 'shortcode'));
-		}
-	}
-	
-	// Add action links in Plugins page
-	public function action_links( $links ) {
-		return array_merge(
-			array(
-				'settings' => '<a href="' . admin_url('admin.php?page=aiobtn') . '">' . __( 'Settings', 'aiobtn' ) . '</a>'
-			),
-			$links
-		);
-	}
-	
-	// Add meta links in Plugins page
-	public function meta_links( $links, $file ) {
-		$plugin = plugin_basename(__FILE__);
-		// create link
-		if ( $file == $plugin ) {
-			return array_merge(
-				$links,
-				array( '<a href="http://twitter.com/wpgoods">'.__('Twitter', 'aiobtn').'</a>' )
-			);
-		}
-		return $links;
-	}
-	
-	// Add All In One Buttons button to TinyMCE
-	public function add_button() {
-		global $pagenow;
-		
-		// Don't bother doing this stuff if the current user lacks permissions
-		if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') )
-			return;
-		
-		// Add only in Rich Editor mode
-		if ( get_user_option('rich_editing') == 'true' && ( in_array( $pagenow, array( 'post.php', 'post-new.php', 'page-new.php', 'page.php' ) ) ) ) {
-			add_filter( 'mce_external_plugins', array( &$this, 'add_tinymce_plugin' ) );
-			add_filter( 'mce_buttons', array( &$this, 'register_button' ) );
-		}
-	}
-
-	// Load the TinyMCE plugin: editor_plugin.js
-	public function add_tinymce_plugin($plugin_array) {
-		// This plugin file will work the magic of our button
-		global $AIO_Buttons_Path;
-		$plugin_array["aio_buttons"] = $AIO_Buttons_Path . 'inc/plugin/editor_plugin.js';
-		return $plugin_array;
-	}
-        
-	// Register the button
-	public function register_button($buttons) {
-		// Add a separation before our button, here our button's id is aio_buttons
-	   array_push($buttons, "|", "aio_buttons");
-	   return $buttons;
+    
+    // Add action links in Plugins page
+    add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
+      
+    // Add meta links in Plugins page
+    add_filter( 'plugin_row_meta', array( $this, 'meta_links' ), 10, 2 );
+    
+    add_filter('widget_text', 'do_shortcode'); // Allow shortcode in widgets
+    add_filter('comment_text', 'do_shortcode'); // Allow shortcode in comments
+    add_filter('the_excerpt', 'do_shortcode'); // Allow shortcode in excerpt
 	}
   
 	/**
@@ -188,6 +117,29 @@ class AIOButtons {
 		} // end if
 
 	} // end load_file
+  
+  // Add action links in Plugins page
+  public function action_links( $links ) {
+    return array_merge(
+      array(
+        'settings' => '<a href="' . admin_url('admin.php?page=aiobtn') . '">' . __( 'Settings', 'aiobtn' ) . '</a>'
+      ),
+      $links
+    );
+  }
+    
+  // Add meta links in Plugins page
+  public function meta_links( $links, $file ) {
+    $plugin = plugin_basename(__FILE__);
+    // create link
+    if ( $file == $plugin ) {
+      return array_merge(
+        $links,
+        array( '<a href="http://twitter.com/wpgoods">'.__('Twitter', 'aiobtn').'</a>' )
+      );
+    }
+    return $links;
+  }
   
 } // end class
 new AIOButtons();

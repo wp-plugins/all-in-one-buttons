@@ -16,9 +16,10 @@
 			ed.addCommand('AIO_Buttons', function () {
 				ed.windowManager.open({
 					file : ajaxurl + '?action=ajax_aiobtn_dialog&aiobtn_dialog_nonce=' + nonce,
-                    width : 1025,
-                    height : 700,
-                    inline : 1
+                    width : 1070,
+                    height : 750,
+                    inline : 1,
+                    maximizable: true
                 }, {
 					plugin_url : url // Plugin absolute URL
                 });
@@ -42,8 +43,8 @@
                 longname : 'All In One Buttons',
                 author : 'Brandon Bell',
                 authorurl : 'http://www.wpgoods.com/',
-                infourl : 'http://www.wpgoods.com/products/all-in-one-buttons/',
-                version : "1.0"
+                infourl : 'http://www.wpgoods.com/product/all-in-one-buttons/',
+                version : "1.1"
             };
         }
     });

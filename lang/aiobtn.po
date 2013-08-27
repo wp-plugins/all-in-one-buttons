@@ -1,79 +1,83 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: All In One Buttons\n"
-"POT-Creation-Date: 2013-01-15 10:28-0600\n"
-"PO-Revision-Date: 2013-01-15 10:28-0600\n"
-"Last-Translator: Brandon Bell <contact@wpgoods.com>\n"
+"POT-Creation-Date: 2013-08-26 19:50-0600\n"
+"PO-Revision-Date: 2013-08-26 19:50-0600\n"
+"Last-Translator: \n"
 "Language-Team: WP Goods <contact@wpgoods.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr__\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: aio-buttons.php:112
-msgid "Settings"
+#: aio-buttons.php:56
+msgid "Download Now"
 msgstr ""
 
 #: aio-buttons.php:125
+msgid "Settings"
+msgstr ""
+
+#: aio-buttons.php:138
 msgid "Twitter"
 msgstr ""
 
-#: admin/class.php:504
+#: inc/admin/class.php:504
 msgid "Settings saved."
 msgstr ""
 
-#: admin/class.php:585
+#: inc/admin/class.php:585
 msgid "Save Changes"
 msgstr ""
 
-#: admin/class.php:915
+#: inc/admin/class.php:915
 msgid "Delete this image"
 msgstr ""
 
-#: admin/class.php:915 admin/class.php:1544
+#: inc/admin/class.php:915 inc/admin/class.php:1544
 msgid "Delete"
 msgstr ""
 
-#: admin/class.php:984
+#: inc/admin/class.php:984
 msgid "Cannot delete file. Something's wrong."
 msgstr ""
 
-#: admin/class.php:1173 admin/class.php:1215
+#: inc/admin/class.php:1173 inc/admin/class.php:1215
 msgid "Remove"
 msgstr ""
 
-#: admin/class.php:1185
+#: inc/admin/class.php:1185
 msgid "Add"
 msgstr ""
 
-#: admin/class.php:1540
+#: inc/admin/class.php:1540
 msgid "Uploaded files"
 msgstr ""
 
-#: admin/class.php:1551
+#: inc/admin/class.php:1551
 msgid "Upload new files"
 msgstr ""
 
-#: admin/class.php:1557
+#: inc/admin/class.php:1557
 msgid "Add more files"
 msgstr ""
 
-#: admin/class.php:1651 admin/class.php:1671
+#: inc/admin/class.php:1651 inc/admin/class.php:1671
 msgid "Select a color"
 msgstr ""
 
-#: admin/options.php:28 admin/options.php:37
+#: inc/admin/options.php:28 inc/admin/options.php:37
 msgid "Getting Started"
 msgstr ""
 
-#: admin/options.php:29 admin/options.php:45
+#: inc/admin/options.php:29 inc/admin/options.php:45
 msgid "General Settings"
 msgstr ""
 
-#: admin/options.php:38
+#: inc/admin/options.php:38
 msgid ""
 "When you're working with new software, we understand that getting started is "
 "often the hardest part. That's why we've provided an overview of All In One "
@@ -81,794 +85,838 @@ msgid ""
 "please feel free to contact wpgoods.com for support. Thank you!"
 msgstr ""
 
-#: admin/options.php:38
+#: inc/admin/options.php:38
 msgid "All In One Buttons - Getting Started Guide"
 msgstr ""
 
-#: admin/options.php:46
+#: inc/admin/options.php:46
 msgid "Shortcode Name"
 msgstr ""
 
-#: admin/options.php:46
+#: inc/admin/options.php:46
 msgid "You can use this option to rename the WordPress shortcode."
 msgstr ""
 
-#: admin/options.php:47 inc/dialog/class.php:41 inc/dialog/class.php:42
+#: inc/admin/options.php:47 inc/dialog/class.php:53 inc/dialog/class.php:54
 msgid "None"
 msgstr ""
 
-#: admin/options.php:47 inc/dialog/class.php:41
+#: inc/admin/options.php:47 inc/dialog/class.php:53
 msgid "Flash"
 msgstr ""
 
-#: admin/options.php:47 inc/dialog/class.php:41
+#: inc/admin/options.php:47 inc/dialog/class.php:53
 msgid "Bounce"
 msgstr ""
 
-#: admin/options.php:47 inc/dialog/class.php:41
+#: inc/admin/options.php:47 inc/dialog/class.php:53
 msgid "Pulse"
 msgstr ""
 
-#: admin/options.php:47 inc/dialog/class.php:41
+#: inc/admin/options.php:47 inc/dialog/class.php:53
 msgid "Shake"
 msgstr ""
 
-#: admin/options.php:47 inc/dialog/class.php:41
+#: inc/admin/options.php:47 inc/dialog/class.php:53
 msgid "Swing"
 msgstr ""
 
-#: admin/options.php:47
+#: inc/admin/options.php:47
 msgid "Default Animation"
 msgstr ""
 
-#: admin/options.php:47
+#: inc/admin/options.php:47
 msgid "You can use this option to change the default animation."
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Black"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Blue"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Brown"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Gray"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Green"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Orange"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Pink"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Purple"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Red"
 msgstr ""
 
-#: admin/options.php:48 inc/dialog/class.php:48
+#: inc/admin/options.php:48 inc/dialog/class.php:60
 msgid "Yellow"
 msgstr ""
 
-#: admin/options.php:48
+#: inc/admin/options.php:48
 msgid "Default Color"
 msgstr ""
 
-#: admin/options.php:48
+#: inc/admin/options.php:48
 msgid "You can use this option to change the default color."
 msgstr ""
 
-#: admin/options.php:49 inc/dialog/class.php:54
+#: inc/admin/options.php:49 inc/dialog/class.php:66
 msgid "Small"
 msgstr ""
 
-#: admin/options.php:49 inc/dialog/class.php:54
+#: inc/admin/options.php:49 inc/dialog/class.php:66
 msgid "Medium"
 msgstr ""
 
-#: admin/options.php:49 inc/dialog/class.php:54
+#: inc/admin/options.php:49 inc/dialog/class.php:66
 msgid "Large"
 msgstr ""
 
-#: admin/options.php:49
+#: inc/admin/options.php:49
 msgid "Default Size"
 msgstr ""
 
-#: admin/options.php:49
+#: inc/admin/options.php:49
 msgid "You can use this option to change the default size."
 msgstr ""
 
-#: admin/options.php:50
+#: inc/admin/options.php:50
 msgid "Default Text"
 msgstr ""
 
-#: admin/options.php:50
+#: inc/admin/options.php:50
 msgid "You can use this option to change the default text."
 msgstr ""
 
-#: admin/options.php:56
+#: inc/admin/options.php:56
 msgid "Customer Support"
 msgstr ""
 
-#: admin/options.php:57
+#: inc/admin/options.php:57
 msgid ""
 "Thank you for downloading All In One Buttons. I really hope you're enjoying "
 "the product. Customer support is a top priority for WP Goods. Your enquiries "
 "will receive a personal response within 48 hours (2 working days)."
 msgstr ""
 
-#: admin/options.php:57
+#: inc/admin/options.php:57
 msgid ""
 "If you need help for any reason, please feel free to contact support through "
 "the WP Goods Ticksy support system. Just sign in with your Facebook or "
 "Twitter account (or register manually) and give us a shout at"
 msgstr ""
 
-#: admin/options.php:57
+#: inc/admin/options.php:57
 msgid "Once again, thank you!"
 msgstr ""
 
-#: inc/api/class.php:66
-msgid "An Unexpected HTTP Error occurred during the API request."
-msgstr ""
-
-#: inc/api/class.php:66
-msgid "Try again"
-msgstr ""
-
-#: inc/api/class.php:71
-msgid "An unknown error occurred"
-msgstr ""
-
-#: inc/dialog/class.php:11
+#: inc/dialog/class.php:23
 msgid ""
 "We're sorry, something went wrong with your request. Please contact support "
 "for further assistance."
 msgstr ""
 
-#: inc/dialog/class.php:18
+#: inc/dialog/class.php:30
 msgid "All In One Buttons"
 msgstr ""
 
-#: inc/dialog/class.php:31
+#: inc/dialog/class.php:43
 msgid "CREATE A BUTTON"
 msgstr ""
 
-#: inc/dialog/class.php:41
+#: inc/dialog/class.php:53
 msgid "ANIMATION:"
 msgstr ""
 
-#: inc/dialog/class.php:42
+#: inc/dialog/class.php:54
 msgid "ALIGNMENT:"
 msgstr ""
 
-#: inc/dialog/class.php:42
+#: inc/dialog/class.php:54
 msgid "Center"
 msgstr ""
 
-#: inc/dialog/class.php:42
+#: inc/dialog/class.php:54
 msgid "Left"
 msgstr ""
 
-#: inc/dialog/class.php:42
+#: inc/dialog/class.php:54
 msgid "Right"
 msgstr ""
 
-#: inc/dialog/class.php:48
+#: inc/dialog/class.php:60
 msgid "COLOR:"
 msgstr ""
 
-#: inc/dialog/class.php:54
+#: inc/dialog/class.php:66
 msgid "SIZE:"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "ICON:"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "No icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Glass icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Music icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Search icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Envelope icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Heart icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Star icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Empty star icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "User icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Film icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Large table header icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Table header icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Table header list icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Ok icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Remove icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Zoom-in icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Zoom-out icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Off icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Signal icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Cog icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Trash icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Home icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "File icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Time icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Road icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Download alternative icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Download icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Upload icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Inbox icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Play circle icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Repeat icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Refresh icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "List alternative icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Lock icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Flag icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Headphones icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Volume off icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Volume down icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Volume up icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "QR code icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Barcode icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Tag icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Tags icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Book icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Bookmark icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Print icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Camera icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Font icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Bold icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Italic icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Text height icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Text width icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Align left icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Align center icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Align right icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Align justify icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "List icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Indent left icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Indent right icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Facetime video icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Picture icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Pencil icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Map marker icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Adjust icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Tint icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Edit icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Share icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Check icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Move icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Step backward icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Fast backward icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Backward icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Play icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Pause icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Stop icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Forward icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Fast forward icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Step forward icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Eject icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Chevron left icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Chevron right icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Plus sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Minus sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Remove sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Ok sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Question sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Info sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Screenshot icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Remove circle icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Ok circle icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Ban circle icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Arrow left icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Arrow right icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Arrow up icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Arrow down icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Share alternative icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Resize full icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Resize small icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Plus icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Minus icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Asterisk icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Exclamation sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Gift icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Leaf icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Fire icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Eye open icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Eye close icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Warning sign icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Plane icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Calendar icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Random icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Comment icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Magnet icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Chevron up icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Chevron down icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Retweet icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Shopping cart icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Folder close icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Folder open icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Resize vertical icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Resize horizontal icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "HDD icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Bullhorn icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Bell icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Certificate icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Thumbs up icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Thumbs down icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Hand right icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Hand left icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Hand up icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Hand down icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Circle arrow right icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Circle arrow left icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Circle arrow up icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Circle arrow down icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Globe icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Wrench icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Tasks icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Filter icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Briefcase icon"
 msgstr ""
 
-#: inc/dialog/class.php:55
+#: inc/dialog/class.php:67
 msgid "Fullscreen icon"
 msgstr ""
 
-#: inc/dialog/class.php:61
+#: inc/dialog/class.php:73
 msgid "TEXT:"
 msgstr ""
 
-#: inc/dialog/class.php:62
+#: inc/dialog/class.php:74
 msgid "TARGET:"
 msgstr ""
 
-#: inc/dialog/class.php:62
+#: inc/dialog/class.php:74
 msgid "_self"
 msgstr ""
 
-#: inc/dialog/class.php:62
+#: inc/dialog/class.php:74
 msgid "_blank"
 msgstr ""
 
-#: inc/dialog/class.php:63
+#: inc/dialog/class.php:75
+msgid "RELATIONSHIP:"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "dofollow"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "nofollow"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "prefetch"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "noreferrer"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "author"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "bookmark"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "help"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "search"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "tag"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "next"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "prev"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "license"
+msgstr ""
+
+#: inc/dialog/class.php:75
+msgid "alternate"
+msgstr ""
+
+#: inc/dialog/class.php:76
 msgid "DESTINATION URL:"
 msgstr ""
 
-#: inc/dialog/class.php:71
+#: inc/dialog/class.php:84
 msgid "Cancel"
 msgstr ""
 
-#: inc/dialog/class.php:72
+#: inc/dialog/class.php:85
 msgid "Create Button"
 msgstr ""
