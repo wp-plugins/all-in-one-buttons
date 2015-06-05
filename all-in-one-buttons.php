@@ -3,7 +3,7 @@
 Plugin Name: All in One Buttons
 Plugin URI: http://www.wpgoods.com/product/all-in-one-buttons/
 Description: Quickly create amazing CSS3 buttons from the WordPress visual editor.
-Version: 1.1
+Version: 1.2
 Author: Brandon Bell
 Author URI: http://www.wpgoods.com
 Author Email: contact@wpgoods.com
@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 //global scope constants
 define( 'aiobtn_path', plugin_dir_path(__FILE__) );
+define( 'AIO_Buttons_Version', '1.2' );
 //declare global variables
 $AIO_Buttons_Path = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
 $AIO_Buttons_Data = get_option('aiobtn_options');
@@ -89,9 +90,7 @@ class AIOButtons {
 			if (isset($_GET['page']) && $_GET['page'] == 'aiobtn') {
 				$this->load_file( self::slug . '-admin-script', '/js/admin.min.js', true );
 			}
-		} else {
-			$this->load_file( self::slug . '-style', '/css/display.css' );
-		} // end if/else
+		}
 	} // end register_scripts_and_styles
 	
 	/**

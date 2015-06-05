@@ -17,7 +17,7 @@
 				ed.windowManager.open({
 					file : ajaxurl + '?action=ajax_aiobtn_dialog&aiobtn_dialog_nonce=' + nonce,
                     width : 1070,
-                    height : 750,
+                    height : window.innerHeight-36,
                     inline : 1,
                     maximizable: true
                 }, {
@@ -29,13 +29,16 @@
             ed.addButton('aio_buttons', {
                 title : 'All In One Buttons',
                 cmd : 'AIO_Buttons',
+                onPostRender : function() {
+                    var ctrl = this;
+
+                    ed.on('NodeChange', function(e) {
+                        ctrl.active(e.element.nodeName == 'IMG');
+                    });
+                },
                 image : url + '/tinymce_button.png'
             });
 
-            // Add a node change handler, selects the button in the UI when a image is selected
-            ed.onNodeChange.add(function (ed, cm, n) {
-                cm.setActive('AIO_Buttons', n.nodeName === 'IMG');
-            });
         },
 
         getInfo : function () {
@@ -44,7 +47,7 @@
                 author : 'Brandon Bell',
                 authorurl : 'http://www.wpgoods.com/',
                 infourl : 'http://www.wpgoods.com/product/all-in-one-buttons/',
-                version : "1.1"
+                version : "1.2"
             };
         }
     });

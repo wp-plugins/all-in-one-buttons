@@ -19,6 +19,8 @@
   $options_panel = new aiobtnAdmin($config);
   $options_panel->OpenTabs_container('');
   $options_panel->SelfPath = plugins_url( 'admin', plugin_basename( dirname( __FILE__ ) ) );
+
+if( isset($_GET['page']) && $_GET['page'] == 'aiobtn' ) {
   
   /**
    * define your admin page tabs listing
@@ -44,9 +46,9 @@
   $options_panel->OpenTab('options_2');
   $options_panel->Title(__('General Settings','aiobtn'));
   $options_panel->addText('shortcode_name',array('name'=> __('Shortcode Name','aiobtn'), 'std'=> 'aio_button', 'desc'=> __('You can use this option to rename the WordPress shortcode.','aiobtn')));
-  $options_panel->addSelect('default_animation',array('none' => __('None','aiobtn'),'flash' => __('Flash','aiobtn'),'bounce' => __('Bounce','aiobtn'),'pulse' => __('Pulse','aiobtn'),'shake' => __('Shake','aiobtn'),'swing' => __('Swing','aiobtn')),array('name'=> __('Default Animation','scdom'), 'std'=> array('none'), 'desc'=> __('You can use this option to change the default animation.','aiobtn')));
-  $options_panel->addSelect('default_color',array('black' => __('Black','aiobtn'),'blue' => __('Blue','aiobtn'),'brown' => __('Brown','aiobtn'),'gray' => __('Gray','aiobtn'),'green' => __('Green','aiobtn'),'orange' => __('Orange','aiobtn'),'pink' => __('Pink','aiobtn'),'purple' => __('Purple','aiobtn'),'red' => __('Red','aiobtn'),'yellow' => __('Yellow','aiobtn')),array('name'=> __('Default Color','scdom'), 'std'=> array('red'), 'desc'=> __('You can use this option to change the default color.','aiobtn')));
-  $options_panel->addSelect('default_size',array('small' => __('Small','aiobtn'),'medium' => __('Medium','aiobtn'),'large' => __('Large','aiobtn')),array('name'=> __('Default Size','scdom'), 'std'=> array('small'), 'desc'=> __('You can use this option to change the default size.','aiobtn')));
+  $options_panel->addSelect('default_animation',array('none' => __('None','aiobtn'),'flash' => __('Flash','aiobtn'),'bounce' => __('Bounce','aiobtn'),'pulse' => __('Pulse','aiobtn'),'shake' => __('Shake','aiobtn'),'swing' => __('Swing','aiobtn')),array('name'=> __('Default Animation','aiobtn'), 'std'=> array('none'), 'desc'=> __('You can use this option to change the default animation.','aiobtn')));
+  $options_panel->addSelect('default_color',array('black' => __('Black','aiobtn'),'blue' => __('Blue','aiobtn'),'brown' => __('Brown','aiobtn'),'gray' => __('Gray','aiobtn'),'green' => __('Green','aiobtn'),'orange' => __('Orange','aiobtn'),'pink' => __('Pink','aiobtn'),'purple' => __('Purple','aiobtn'),'red' => __('Red','aiobtn'),'yellow' => __('Yellow','aiobtn')),array('name'=> __('Default Color','aiobtn'), 'std'=> array('red'), 'desc'=> __('You can use this option to change the default color.','aiobtn')));
+  $options_panel->addSelect('default_size',array('small' => __('Small','aiobtn'),'medium' => __('Medium','aiobtn'),'large' => __('Large','aiobtn')),array('name'=> __('Default Size','aiobtn'), 'std'=> array('small'), 'desc'=> __('You can use this option to change the default size.','aiobtn')));
   $options_panel->addText('default_text',array('name'=> __('Default Text','aiobtn'), 'std'=> 'Download Now', 'desc'=> __('You can use this option to change the default text.','aiobtn')));
   $options_panel->CloseTab();
 
@@ -56,4 +58,5 @@
     'title'=>__('Customer Support','aiobtn'),
     'content'=>'<p>'.__('Thank you for downloading All In One Buttons. I really hope you\'re enjoying the product. Customer support is a top priority for WP Goods. Your enquiries will receive a personal response within 48 hours (2 working days).','aiobtn').'</p><p>'.__('If you need help for any reason, please feel free to contact support through the WP Goods Ticksy support system. Just sign in with your Facebook or Twitter account (or register manually) and give us a shout at','aiobtn').' <a href="http://wpgoods.ticksy.com">http://wpgoods.ticksy.com</a>. '.__('Once again, thank you!','aiobtn').'</p>'
   ));
+}
 ?>
