@@ -16,7 +16,7 @@ if (!class_exists('aiobtnShortcode')) {
     }
   
 		public function shortcode($atts) {
-			global $AIO_Buttons_Data;
+			global $AIO_Buttons_Data, $AIO_Buttons_Path;
 			
 			if(is_array($AIO_Buttons_Data) && array_key_exists('default_animation',$AIO_Buttons_Data)) {
 				$default_animation = $AIO_Buttons_Data['default_animation'];
@@ -39,7 +39,7 @@ if (!class_exists('aiobtnShortcode')) {
 			if(is_array($AIO_Buttons_Data) && array_key_exists('default_text',$AIO_Buttons_Data)) {
 				$default_text = $AIO_Buttons_Data['default_text'];
 			} else {
-				$default_text = 'Download Now';
+				$default_text = __( 'Download Now', 'aiobtn' );
 			}
 			
 			// Extract the attributes
@@ -54,6 +54,8 @@ if (!class_exists('aiobtnShortcode')) {
 				'relationship' => 'dofollow',
 				'text' => $default_text
 				), $atts));
+
+      wp_enqueue_style( 'aiobtn-style', $AIO_Buttons_Path . '/css/display.css', array(), AIO_Buttons_Version );
 				
 			// You can now access the attribute values		
       $align_array = array('none','left','right','center');
@@ -73,7 +75,28 @@ if (!class_exists('aiobtnShortcode')) {
       $relationship_array = array('dofollow','nofollow','prefetch','noreferrer','author','bookmark','help','search','tag','next','prev','license','alternate');
       if (sizeof($relationship_array) == 0 || !in_array($relationship, $relationship_array)) { $relationship = 'dofollow'; }
 			
-      if($icon == 'none') { $icon = ''; } else { $icon = '<i class="icon-'.$icon.'"></i>'; }
+      if($icon == 'none') { $icon = ''; } else {
+        $social_array = array('pinterest','dropbox','google-plus','jolicloud','yahoo','blogger','picasa','amazon','tumblr','wordpress','instapaper','evernote','xing','zootool','dribbble','deviantart','read-it-later','linked-in','forrst','pinboard','behance','github','youtube','skitch','foursquare','quora','badoo','spotify','stumbleupon','readability','facebook','twitter','instagram','posterous-spaces','vimeo','flickr','last-fm','rss','skype','e-mail','vine','myspace','goodreads','apple','windows','yelp','playstation','xbox','android','ios','wikipedia','pocket','steam','souncloud','slideshare','netflix','paypal','google-drive','linux-foundation','ebay');
+        if(!in_array($icon, $social_array)) {
+          wp_enqueue_style( 'aiobtn-glyphicons', $AIO_Buttons_Path . '/css/glyphicons.css', array(), AIO_Buttons_Version );
+          if($size == 'small') {
+            $icon = '<i class="glyphicons glyphicons-'.$icon.'"></i>'; 
+          } elseif($size == 'medium') {
+            $icon = '<i class="glyphicons glyphicons-'.$icon.' x2"></i>'; 
+          } else {
+            $icon = '<i class="glyphicons glyphicons-'.$icon.' x3"></i>'; 
+          }
+        } else {
+          wp_enqueue_style( 'aiobtn-glyphicons-social', $AIO_Buttons_Path . '/css/glyphicons-social.css', array(), AIO_Buttons_Version );
+          if($size == 'small') {
+            $icon = '<i class="social social-'.$icon.'"></i>';
+          } elseif($size == 'medium') {
+            $icon = '<i class="social social-'.$icon.' x2"></i>';
+          } else {
+            $icon = '<i class="social social-'.$icon.' x3"></i>';
+          }
+        }
+      }
       
       if($align == 'none'){ $align = 'aio-button'; } else { $align = 'aio-button-'.$align; }
       if($animation == 'none'){ $animation = '';  } else { $animation = 'aio-'.$animation; }
