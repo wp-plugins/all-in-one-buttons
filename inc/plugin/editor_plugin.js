@@ -47,7 +47,7 @@
                 author : 'Brandon Bell',
                 authorurl : 'http://www.wpgoods.com/',
                 infourl : 'http://www.wpgoods.com/product/all-in-one-buttons/',
-                version : "1.2"
+                version : "1.3"
             };
         }
     });

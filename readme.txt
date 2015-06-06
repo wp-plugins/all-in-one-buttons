@@ -4,7 +4,7 @@ Donate link: http://www.wpgoods.com
 Tags: button generator,button,buttons,CSS button generator,CSS Buttons,CSS3 button generator,CSS3 buttons,animated buttons
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ Do you have questions or issues with All In One Buttons? Use these support chann
 1. When you're working with new software, we understand that getting started is often the hardest part. That's why we've provided an overview of All In One Buttons to help you do just that.
 
 == Changelog ==
+
+= Version 1.3 =
+* Fixed: Change in button size from previous update.
 
 = Version 1.2 =
 * Added: More icons.
