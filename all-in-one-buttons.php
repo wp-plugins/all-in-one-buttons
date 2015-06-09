@@ -3,7 +3,7 @@
 Plugin Name: All in One Buttons
 Plugin URI: http://www.wpgoods.com/product/all-in-one-buttons/
 Description: Quickly create amazing CSS3 buttons from the WordPress visual editor.
-Version: 1.3
+Version: 1.4
 Author: Brandon Bell
 Author URI: http://www.wpgoods.com
 Author Email: contact@wpgoods.com
